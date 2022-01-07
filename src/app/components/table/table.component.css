@@ -1,0 +1,182 @@
+.div-container{
+    width:80%;
+    margin:auto;
+    background: #fff;
+    border-radius:10px;
+    margin-top:40px;
+    box-shadow: 3px 3px 10px #ccc;
+    padding:10px;
+    overflow: hidden; 
+    margin-bottom:20px
+}
+
+.div-table{
+    width: calc(100% - 30px);
+    margin-left:15px;
+    margin-right:15px;
+}
+
+
+.div-table div{
+    padding: 5px 0px;  
+}
+
+.div-table div button{
+    margin:auto;
+    display: block;
+    margin-top:20px;
+    text-align:center;
+    padding-right:15px
+}
+
+.div-table div .icono{
+    font-size: 50px;
+    color:#aaa
+}
+
+.div-usuarios{
+    background: #f6f6f6;
+    height: 90px;
+    margin-bottom:10px
+}
+
+
+
+.div-table div h3{ 
+    text-align:center;
+    font-weight: bold;
+    align-self: center;
+    margin:auto;
+    margin-top:13px;
+}
+
+.div-table .div-usuarios h3{ 
+    text-align:center;
+    font-weight: 100;
+    align-self: center;
+    margin-top:25px;
+}
+
+
+.badge{
+    width:100%;
+    display: block;
+    margin:auto;
+    text-align:center;
+    padding:6px;
+    
+    margin-top: 23px;
+    font-size:17px;
+    text-align: center;
+    
+}
+
+.Inactive{
+    background: #f7ddc2;
+    color:#cca276;
+}
+
+.Active{
+    background: #d6f1e4;
+    color:#61a885;
+}
+
+.imagen{
+    border-radius:50%;
+    overflow: hidden;
+    display:inline;
+    background: #fff;
+    margin-top:15px;
+    margin-left:10px;
+    margin-right:10px;
+    width:60px;
+    height: 60px;
+    border-radius:50%;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+.boton-comentarios{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    color:#fff;
+    font-size:27px;
+    background: #ff5a70;
+    outline:none;
+    border:none;
+    position:fixed;
+    right: 20px;
+    bottom:20px;
+}
+
+.titulos-responsive{
+    display:none;
+}
+
+
+@media screen and (max-width:1000px) {   
+    .div-container{
+        margin-top: 250px;
+        background: none;
+        box-shadow: none;
+        width:90%;
+    }
+
+    .col{
+        height: 30px;
+        margin:0;
+    }
+
+    .col div{
+        width:50%
+    }
+
+    .imagen{
+        display:none
+    }
+
+    .row{
+        flex-direction:column;
+        background: #fff;
+        box-shadow: 3px 3px 10px #ccc;
+        margin-bottom: 20px
+    }
+
+    .columna-2, .columna-4, .columna-6{
+        background: #fff;
+    }
+
+    .titulos{
+        display:none
+    }
+
+    .titulos-responsive{
+        display:block
+    }
+
+    .col div div h3{
+        text-align:center!important;
+        margin-top:0!important;
+    }
+
+    .col div h3, .col div button{
+        margin-top:2px!important;
+    }
+
+    .badge{
+        margin:auto;
+        width:40%;
+        
+    }
+
+    .h3{
+        width:50%;
+    }
+
+    .titulo-table{
+        text-align: left!important;
+        font-weight: 700!important;
+    }
+
+}

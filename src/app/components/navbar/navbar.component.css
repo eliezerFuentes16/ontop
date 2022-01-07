@@ -1,0 +1,143 @@
+.logo{
+    color: #ff5a70;
+    font-size:36px
+}
+
+.div-nav{
+    background: #fff;
+    box-shadow: 10px 10px 15px #ccc;
+    height: 90px;
+    width:100%;
+    padding:0 10px;
+    margin:0;
+}
+
+.div-container-a{
+    display:flex;
+    justify-content: space-between;
+    width:600px;
+    height: 100%;
+    align-items: center;
+}
+
+
+.div-container-a span{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    height: 100%;  
+    position:relative
+}
+
+.div-container-a a{
+    font-size:15px;
+    color:#777;
+}
+
+.div-container-a i{
+    margin-bottom:2px
+}
+
+#activo a{
+    color:#ff5a70
+}
+
+
+#activo::after{
+	content:"";
+	display:block;
+	background: #ff5a70;
+	width:100%;
+	height: 4px;
+	clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    bottom:0;
+}
+
+.fa-angle-down{
+    color:#6667;
+    cursor: pointer;
+}
+
+.imagen{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#aaa;
+    overflow: hidden;
+    border-radius:50%;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+.div-barra{
+    display: none
+}
+
+/* Responsive */
+.div-responsive{
+    width:100%;
+    display:none;
+    position:absolute;
+    top: 90px;
+    height: 0;
+    border-top:1px solid #eee8;
+    background: #fff;
+    z-index:100;
+    overflow:hidden;
+    transition: .5s height;
+}
+
+.div-responsive::after{
+	content:"";
+	display:block;
+	background: #ccc8;
+	width:90%;
+	height: 1px;
+	clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    margin:auto;
+    right: 0;
+    left: 0;
+    top:0;
+}
+
+.div-responsive ul li{
+    list-style:none;
+    
+}
+
+.div-responsive ul li a{
+    font-size:15px;
+    color:#555b
+}
+
+#activo-responsive{
+    color:#ff5a70;
+}
+
+@media screen and (max-width:1000px) {   
+     /*displays none  */
+    .div-container-a{
+        display:none
+    }
+    .div-imagen{
+        display:none
+    }
+
+    /* display block */
+
+    .div-barra{
+        display: block;
+        font-size:38px;
+        color:#ff5a70;
+        cursor: pointer;
+    }
+
+    .div-responsive{
+        display:block;
+    }
+
+    
+
+}

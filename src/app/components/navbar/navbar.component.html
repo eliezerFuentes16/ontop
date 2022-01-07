@@ -1,0 +1,56 @@
+<!-- COmponente de la barra de navegacion aqui en este archi
+se esta usando para el html de la barra de navegacion-->
+
+<!-- Creando el mat-toolbar de angular material y colocandole la clase div-nav para que abarqe el 100% del
+width y 90px de height -->
+<mat-toolbar class="div-nav">
+   
+    <span class="logo">Ontop</span>
+    <!-- esta etiquetas Span de con la clase example-spacer son espacios para hacer que el contenido del div-container a
+    se centre en la barra de navegacion -->
+    <span class="example-spacer"></span>
+    <!-- Creando el div container a este div es el que coniene todas las etiquetas a -->
+    <div class="div-container-a">
+        <span id="activo">
+            <a mat-button><i class="fas fa-user"></i>&nbsp;Contracts&nbsp;<i class="fas fa-angle-down"></i></a>
+        </span>
+        <span>
+            <a mat-button><i class="fas fa-file-excel"></i>&nbsp;Documents&nbsp;<i class="fas fa-angle-down"></i></a>
+        </span>
+        <span>
+            <a mat-button><i class="fas fa-id-card"></i>&nbsp;Payout&nbsp;<i class="fas fa-angle-down"></i></a>
+        </span>
+        <span>
+            <a mat-button><i class="fas fa-clock"></i>&nbsp;Time&nbsp;<i class="fas fa-angle-down"></i></a>
+        </span>
+    </div>
+
+    <span class="example-spacer"></span>
+    <!-- Agregando la imagen del perfil del usuario -->
+    <div class="div-imagen">
+        <img class="imagen" src="../../../assets/img/4.jpg"/>   
+    &nbsp;<i class="fas fa-angle-down"></i>
+    </div>
+    <!-- Responsive -->
+    <div class="div-barra" (click)="desplegarMenu()"><i class="fas fa-bars"></i></div>
+    <!-- Barrra para des´legar el menu responsive -->
+</mat-toolbar>
+<!-- Agregando la barra de navegacion responsive que es la que se despliega en una resolucion menor de 1000px 
+cuando se le hace click a la barra -->
+<div class="div-responsive">
+        <ul>
+            <li >
+                <a id="activo-responsive" mat-button><i class="fas fa-user"></i>&nbsp;Contracts&nbsp;<i class="fas fa-angle-down"></i></a>
+            </li>
+            <li>
+                <a mat-button><i class="fas fa-file-excel"></i>&nbsp;Documents&nbsp;<i class="fas fa-angle-down"></i></a>
+            </li>
+            <li>
+                <a mat-button><i class="fas fa-id-card"></i>&nbsp;Payout&nbsp;<i class="fas fa-angle-down"></i></a>
+            </li>
+            <li>
+                <a mat-button><i class="fas fa-clock"></i>&nbsp;Time&nbsp;<i class="fas fa-angle-down"></i></a>
+            </li>
+        </ul>
+    </div>
+

@@ -1,0 +1,39 @@
+<!-- Creando el div-formulario que contendran todo el formulario -->
+<div class="div-formulario">
+    <h1 class="h1" >Contracts for cliente</h1>
+    <!-- ]Primer flex container que contiene el input de buscar y los botones -->
+    <div class="flex-container">
+        <div class="input-group mb-3 input-buscar">
+            <span class="input-group-text span-input" id="basic-addon3"><i class="fas fa-search"></i></span>
+            <input type="text" class="form-control " id="basic-url" aria-describedby="basic-addon3" placeholder="Search">
+        </div>
+        <div class="div-botones">
+            <button class="btn btn-secondary botones"><i class="fas fa-sort"></i>&nbsp;Filter</button>
+            <button class="btn btn-rose botones"><i class="fas fa-plus"></i>&nbsp;New Hire</button>
+        </div>
+    </div>
+    <!-- segundo flex-container que contiene los input para insertar un nuevo usuario -->
+    <div class="flex-container flex-container-input">
+        <div class="input-group mb-3 inputs-insert">
+            <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+        <div class="input-group mb-3 inputs-insert">
+            <select class="form-select">
+                <option disabled selected>Contracts type</option>
+                <option>Traditional</option>
+                <option>Especial</option>
+            </select>
+        </div>
+        <div class="input-group mb-3 inputs-insert">
+            <input type="text" class="form-control " id="basic-url" aria-describedby="basic-addon3" placeholder="Contracts Name">
+        </div>
+        <div class="input-group mb-3 inputs-insert">
+            <select class="form-select">
+                <option disabled selected>Status</option>
+                <option>Active</option>
+                <option>Inactive</option>
+            </select>
+        </div>
+    </div>
+    
+</div>

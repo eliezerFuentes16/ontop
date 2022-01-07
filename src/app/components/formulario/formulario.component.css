@@ -1,0 +1,99 @@
+.div-formulario{
+    width:80%;
+    margin:auto;
+    height: 200px;
+}
+
+.h1{
+    text-align:center;
+    font-size:32px;
+    margin-top:50px;
+    margin-bottom:50px;
+    color:#333;
+    font-weight: bold;
+}
+
+.flex-container{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.span-input{
+    background: #fff;
+}
+
+.input-buscar{
+    width:calc(100% - 300px);
+    align-self: center;
+    height: 50px;
+}
+
+.input-buscar input{
+    box-shadow: 3px 3px 10px #ccc;
+
+}
+
+.div-botones{
+    width:270px;
+    display:flex;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+
+.botones{
+    width:120px;
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+.btn-rose{
+    background: #ff5a70;
+    color:#fff;
+}
+
+.btn-rose:hover{
+    background: #e96d7d;
+    color:#fff;
+}
+
+.inputs-insert{
+    width:24%;
+}
+
+.inputs-insert:nth-child(3){
+    width:28%;
+}
+
+
+.inputs-insert:nth-child(4){
+    width:20%;
+}
+
+.inputs-insert input, .inputs-insert select{
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+.input-select{
+    width:100%;
+}
+
+@media screen and (max-width:1000px) {   
+    .flex-container{
+        flex-direction:column;
+        width:95%;
+        
+    }
+    .flex-container div{
+        width:100%;
+    }
+
+    .flex-container-input{
+        width:80%;
+        margin:auto;
+        margin-top:20px;
+    }
+
+
+}
